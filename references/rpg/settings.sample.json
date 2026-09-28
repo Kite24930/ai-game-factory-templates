@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "identity": {"title":"ひかりの森の魔法使い","titleLines":["ひかりの森の","魔法使い"],"subtitle":"THE LAST LITTLE LIGHT","heroName":"見習い魔法使い","intro":"小さな魔法で、森をもう一度。","ending":"大樹に、光が帰ってきた。","endingLines":["大樹に、","光が帰ってきた。"]},
+  "hero": {"hp":60,"speed":250,"battleHeight":310,"mapHeight":96,"faces":"right"},
+  "spells": {"fire":{"name":"炎の魔法","damage":12},"water":{"name":"水の魔法","damage":12},"grass":{"name":"草の魔法","damage":12},"guard":{"name":"まもる","damageMultiplier":0.25},"heal":{"name":"回復","amount":30,"uses":3}},
+  "combat": {"weakMultiplier":1.5,"resistMultiplier":0.7,"enemyGuardMultiplier":0.65},
+  "theme": {"accent":"#efd596","magic":"#ffe9a3","water":"#7be4e4"},
+  "images": {"hero":null,"heroMap":null,"forestEnemy":null,"waterEnemy":null,"boss":null,"battle":null,"mapEntrance":null,"mapPond":null,"mapTree":null},
+  "areas": [
+    {"name":"森の入口","landmark":"古い石の門","note":"門の向こうで、影が動いた。","inspect":["炎は草に、草は水に、水は炎に強い。","大技が来る前には「まもる」。体力が減ったら「回復」も使おう。"],"inspectAt":{"x":255,"y":390},"obstacles":[],"enemy":{"id":"forest","name":"森の影の魔物","element":"grass","hp":54,"x":720,"y":445,"height":205,"pattern":[{"kind":"attack","name":"影のひっかき","damage":5},{"kind":"focus","name":"飛びかかる準備","damage":12},{"kind":"attack","name":"影のひっかき","damage":5},{"kind":"guard","name":"影をまとう","damage":3}]}},
+    {"name":"池の周辺","landmark":"水辺の石碑","note":"水面に、もうひとつの影。","inspect":["水の魔物には、草の魔法がよく効く。","バリアの間は回復するチャンス。大波は「まもる」で小さくできる。"],"inspectAt":{"x":285,"y":525},"obstacles":[{"x":410,"y":200,"w":400,"h":165}],"enemy":{"id":"water","name":"池の水の魔物","element":"water","hp":84,"x":790,"y":462,"height":275,"pattern":[{"kind":"guard","name":"水のバリア","damage":3},{"kind":"attack","name":"水しぶき","damage":5},{"kind":"focus","name":"大波の準備","damage":15},{"kind":"attack","name":"水しぶき","damage":5}]}},
+    {"name":"大樹の広場","landmark":"大樹の根もと","note":"この影を越えれば、光は戻る。","inspect":["大きな影は、草・水・炎へと属性を変える。弱点を見てみよう。","間違えても、あわてなくていい。「まもる」と「回復」で立て直そう。"],"inspectAt":{"x":500,"y":355},"obstacles":[{"x":520,"y":180,"w":235,"h":115}],"enemy":{"id":"boss","name":"大樹を覆う巨大な影","element":"grass","phases":[{"at":0.6,"element":"water"},{"at":0.3,"element":"fire"}],"hp":150,"x":765,"y":432,"height":295,"pattern":[{"kind":"attack","name":"根のムチ","damage":7},{"kind":"guard","name":"闇のよろい","damage":4},{"kind":"focus","name":"闇の嵐の準備","damage":16},{"kind":"attack","name":"影の爪","damage":8},{"kind":"focus","name":"大きな闇の準備","damage":18}]}}
+  ]
+}
+

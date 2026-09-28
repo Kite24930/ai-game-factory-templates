@@ -1,0 +1,90 @@
+{
+  "version": 1,
+  "identity": {
+    "id": "shimairokart",
+    "title": "しまいろカート",
+    "subtitle": "SHIMAIRO KART",
+    "eyebrow": "海と、風と、最後の直線。",
+    "description": "カーブで少しゆるめて、\nまっすぐになったら、思いきり。",
+    "startLabel": "レースをはじめる",
+    "courseName": "しおかぜアイランド"
+  },
+  "race": {
+    "laps": 2,
+    "maxSpeed": 36,
+    "acceleration": 11,
+    "braking": 19,
+    "steering": 28,
+    "wheelbase": 2.8,
+    "speedSteeringFalloff": 3.5,
+    "steerResponse": 9,
+    "steerSlowdown": 0.08,
+    "steerDeceleration": 4,
+    "wallImpact": 0.58,
+    "wallDrag": 2.8,
+    "wallSteeringSpeed": 7,
+    "rivals": [
+      {"name": "ソラ", "color": "#2a9dce", "helmet": "#edf8e9", "lane": 1.6, "start": 7, "lookAhead": 30, "cornerMargin": 1.08, "decisionPeriod": 0.07},
+      {"name": "ヒナ", "color": "#efb63c", "helmet": "#fff2c7", "lane": -1.6, "start": 13, "lookAhead": 35, "cornerMargin": 1.15, "decisionPeriod": 0.09},
+      {"name": "モリ", "color": "#61a477", "helmet": "#f0efd7", "lane": 1.6, "start": 19, "lookAhead": 38, "cornerMargin": 1.21, "decisionPeriod": 0.08}
+    ]
+  },
+  "items": {
+    "enabled": true,
+    "seed": 73,
+    "rows": [0.07, 0.23, 0.40, 0.56, 0.74, 0.9],
+    "lanes": [-4.8, -1.6, 1.6, 4.8],
+    "pickupRadius": 1.6,
+    "respawnSeconds": 2.4,
+    "boostSeconds": 1.8,
+    "boostMultiplier": 1.22,
+    "shieldSeconds": 7,
+    "shotRange": 95,
+    "shotSpeed": 72,
+    "shotWarning": 0.65,
+    "slowSeconds": 1.25,
+    "slowMultiplier": 0.58,
+    "hitImmunity": 2.1
+  },
+  "hero": {
+    "name": "あなた",
+    "kartColor": "#ee6244",
+    "accentColor": "#ffe8b2",
+    "furColor": "#d98136",
+    "helmetColor": "#fff2d7",
+    "driverImage": null,
+    "driverWidth": 1.15,
+    "driverHeight": 1.55
+  },
+  "world": {
+    "sky": "#71c9e3",
+    "horizon": "#f7e6bc",
+    "sea": "#22aaa9",
+    "grass": "#86b96b",
+    "sand": "#eddb9a",
+    "road": "#789093",
+    "curb": "#e76049",
+    "sunlight": "#fff0d0",
+    "seed": 73,
+    "roadTexture": null
+  },
+  "track": {
+    "width": 15,
+    "points": [
+      [0, 0, 0], [0, 0, -110], [0, 0.8, -225],
+      [44, 2.5, -315], [126, 5, -348], [218, 6, -305],
+      [252, 5.2, -218], [226, 3.8, -149], [172, 2.2, -93],
+      [216, 1.2, -22], [194, 0.3, 56], [115, 0, 109],
+      [32, 0, 94], [0, 0, 54]
+    ],
+    "sections": [
+      {"at": 0, "name": "海岸ストレート"},
+      {"at": 0.22, "name": "灯台カーブ"},
+      {"at": 0.49, "name": "みどりのS字"},
+      {"at": 0.85, "name": "ラストストレート"}
+    ]
+  },
+  "audio": {"volume": 0.18},
+  "display": {"maxPixelRatio": 1.5, "shadows": true}
+}
+
